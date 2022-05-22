@@ -27,7 +27,7 @@ export default function Homepage() {
 
   return (
     <section className='haiku'>
-      <header>
+      <header className='haiku-header'>
         <nav className='top-nav'>
           <img className='nav-logo' src={useBaseUrl('/img/logo.svg')} alt="react-haiku logo" />
           <div className='nav-links'>
