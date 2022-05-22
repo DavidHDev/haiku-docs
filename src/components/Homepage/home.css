@@ -102,7 +102,14 @@ header {
 }
 
 .menu-icon {
+  color: #f5f5f5 !important;
+  transition: color .2s ease;
   display: none;
+}
+
+.menu-icon:hover {
+  color: #FF005C !important;
+  transition: color .2s ease;
 }
 
 .nav-links a {
