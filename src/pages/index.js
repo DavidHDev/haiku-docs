@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import Homepage from '@site/src/components/Homepage';
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       description="A minimal React Hooks library that saves you time and lines of code.">
 
       <main className='home'>
-        <HomepageFeatures />
+        <Homepage />
       </main>
     </Layout>
   );

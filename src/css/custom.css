@@ -27,7 +27,6 @@
   --ifm-color-primary-lighter: #FF005C;
   --ifm-color-primary-lightest: #FF005C;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --ifm-background-color: #000000;
 }
 
 [data-theme='light'] .navbar__logo img {
@@ -35,7 +34,8 @@
 }
 
 .navbar__logo img {
-  width: 80px;
+  width: 90px;
+  transform: translateY(-1.5px);
 }
 
 .home {
@@ -45,5 +45,5 @@
   width: 100%;
   min-height: 100vh;
   z-index: 99999999;
-  background-color: #1b1b1d;
+  background-color: #222;
 }

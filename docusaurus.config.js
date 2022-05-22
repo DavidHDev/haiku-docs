@@ -39,13 +39,6 @@ const config = {
           //editUrl:
           //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -56,9 +49,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      forceDarkMode: true,
       navbar: {
         logo: {
-          alt: 'My Site Logo',
+          alt: 'React Haiku Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -66,7 +60,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Documentation',
+            label: 'Docs',
           },
           {
             href: 'https://github.com/DavidHDev/react-haiku',
@@ -74,7 +68,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://google.com/',
+            href: 'https://ko-fi.com/davidwebdev',
             label: 'Sponsor',
             position: 'right',
           }
