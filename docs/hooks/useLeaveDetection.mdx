@@ -18,7 +18,7 @@ import { UseLeaveDetectionDemo } from '../../demo/UseLeaveDetectionDemo.jsx';
 import { useLeaveDetection } from 'react-haiku';
 import { useState } from 'react';
 
-export const UseLeaveDetectionDemo = () => {
+export const Component = () => {
     const [leaveCount, setLeaveCount] = useState(0);
     useLeaveDetection(() => setLeaveCount((s) => s + 1));
 
