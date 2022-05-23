@@ -16,30 +16,28 @@ import { ShowDemo } from '../../demo/ShowDemo.jsx';
 
 ```jsx
 import { useState } from 'react';
-import { If } from 'react-haiku';
+import { Show } from 'react-haiku';
 
 export const Component = () => {
-    const [number, setNumber] = React.useState(6);
+    const [number, setNumber] = useState(6);
 
     return (
-        <div className="demo-container-center">
-            <Show>
-                <Show.When isTrue={number === 6}>
-                    <b>Number is 6!</b>
-                    <button onClick={() => setNumber(number + 1)}>Increment</button>
-                </Show.When>
+        <Show>
+            <Show.When isTrue={number === 6}>
+                <b>Number is 6!</b>
+                <button onClick={() => setNumber(number + 1)}>Increment</button>
+            </Show.When>
 
-                <Show.When isTrue={number === 7}>
-                    <b>Number is 7!</b>
-                    <button onClick={() => setNumber(number + 1)}>Increment</button>
-                </Show.When>
+            <Show.When isTrue={number === 7}>
+                <b>Number is 7!</b>
+                <button onClick={() => setNumber(number + 1)}>Increment</button>
+            </Show.When>
 
-                <Show.Else>
-                    <b>No valid number found!</b>
-                    <button onClick={() => setNumber(6)}>Reset</button>
-                </Show.Else>
-            </Show>
-        </div>
+            <Show.Else>
+                <b>No valid number found!</b>
+                <button onClick={() => setNumber(6)}>Reset</button>
+            </Show.Else>
+        </Show>
     );
 }
 ```
