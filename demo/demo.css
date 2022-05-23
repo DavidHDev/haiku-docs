@@ -33,6 +33,7 @@
 input {
     position: relative;
     font-size: 16px;
+    color: #f5f5f5 !important;
     caret-color: #FF005C;
     padding: .7em 1em;
     border-radius: 1rem;
