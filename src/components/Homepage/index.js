@@ -27,6 +27,7 @@ export default function Homepage() {
 
   return (
     <section className='haiku'>
+      <div>
       <header className='haiku-header'>
         <nav className='top-nav'>
           <img className='nav-logo' src={useBaseUrl('/img/logo.svg')} alt="react-haiku logo" />
@@ -38,7 +39,7 @@ export default function Homepage() {
             <a className='supporter-button' rel='noreferrer' target="_blank" aria-label="Be The First" href='https://ko-fi.com/davidwebdev'>
               <button className='sponsor'>
                 <img className='nav-img' src={useBaseUrl('/img/sponsor.svg')} alt="sponsor heart" />
-                Sponsor
+                Support
               </button>
             </a>
           </div>
@@ -53,7 +54,7 @@ export default function Homepage() {
               </a>
               <a onClick={() => setMenuOpen(false)} rel='noreferrer' target="_blank" aria-label="Be The First" href='https://ko-fi.com/davidwebdev'>
                 <button>
-                  Sponsor
+                  Support
                   <img src={useBaseUrl('/img/sponsor.svg')} alt="sponsor heart" />
                 </button>
               </a>
@@ -84,18 +85,19 @@ export default function Homepage() {
           </div>
         </div>
       </div>
+      </div>
+      
 
       <div className='sponsors-container'>
         <div className='haiku-sponsors'>
-          <p className='supporters-title'>Supporters</p>
-          <div className='supporters'>
-            <a className='supporter-button' rel='noreferrer' target="_blank" aria-label="Be The First" href='https://ko-fi.com/davidwebdev'>
-              <button>
-                <img src={useBaseUrl('/img/sponsor.svg')} alt="sponsor heart" />
-                Be The First
-              </button>
-            </a>
-          </div>
+          <p className='supporters-title'>Support The Creator</p>
+          <p className='support-description'>If you enjoy my work, you can fuel it with more coffee!</p>
+          <a rel='noreferrer' target="_blank" aria-label="Be The First" href='https://ko-fi.com/davidwebdev'>
+            <button className='support-button'>
+              <img className='nav-img' src={useBaseUrl('/img/sponsor.svg')} alt="sponsor heart" />
+              Show Your Support
+            </button>
+          </a>
         </div>
       </div>
       <footer className='haiku-footer'>
