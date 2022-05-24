@@ -32,6 +32,9 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        gtag: {
+          trackingID: 'G-318RQSTQLP',
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
@@ -49,7 +52,6 @@ const config = {
     ],
   ],
 
-  plugins: ['@docusaurus/plugin-google-analytics'],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -85,9 +87,6 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-      },
-      googleAnalytics: {
-        trackingID: 'G-318RQSTQLP',
       },
     }),
 };
