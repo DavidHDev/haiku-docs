@@ -42,10 +42,14 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        googleAnalytics: {
+          trackingID: 'G-318RQSTQLP',
+        },
       }),
     ],
   ],
 
+  plugins: ['@docusaurus/plugin-google-analytics'],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -81,6 +85,9 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      googleAnalytics: {
+        trackingID: 'G-318RQSTQLP',
       },
     }),
 };
