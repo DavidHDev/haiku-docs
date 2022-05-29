@@ -1,6 +1,6 @@
 # useToggle()
 
-The `useToggle()` hook can toggle between a set of two possible values and automatically update the state with the new value.
+The `useToggle()` hook can toggle between a set of two possible values and automatically update the state with the new value, if you want to toggle a boolean's state, see `useBoolToggle()` below.
 
 ### Import
 
@@ -13,6 +13,8 @@ import { useToggle } from 'react-haiku';
 import { UseToggleDemo } from '../../demo/UseToggleDemo.jsx';
 
 <UseToggleDemo />
+
+#### General
 
 ```jsx
 import { useToggle } from 'react-haiku';
@@ -29,8 +31,25 @@ export const Component = () => {
 }
 ```
 
+#### Boolean
+
+```jsx
+import { useBoolToggle } from 'react-haiku';
+
+export const Component = () => {
+    const [isTrue, toggleTrue] = useBoolToggle(true) // default initial value is false
+
+    return (
+        <>
+            <b>{`State: ${isTrue}`}</b>
+            <button onClick={() => toggleTrue()}>Toggle!</button>
+        </>
+    );
+}
+```
+
 ### API
 
-This hooks accepts the following arguments:
+This hook accepts the following arguments:
 - `initialValue` - the initial preferred value for the toggle state
 - `options` - must be an array with strictly 2 elements and must also contain the value set for `initialValue`

@@ -73,14 +73,19 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://github.com/DavidHDev/react-haiku',
+            to: 'https://github.com/DavidHDev/react-haiku',
             label: 'GitHub',
             position: 'right',
           },
           {
-            href: 'https://ko-fi.com/davidwebdev',
+            to: 'https://ko-fi.com/davidwebdev',
             label: 'Sponsor',
             position: 'right',
+          },
+          {
+            position: 'right',
+            label: 'v2.0.0',
+            to: 'https://www.npmjs.com/package/react-haiku',
           }
         ],
       },
