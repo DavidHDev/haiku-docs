@@ -84,7 +84,7 @@ const config = {
           },
           {
             position: 'right',
-            label: 'v2.0.0',
+            label: 'v2.0.1',
             to: 'https://www.npmjs.com/package/react-haiku',
           }
         ],
