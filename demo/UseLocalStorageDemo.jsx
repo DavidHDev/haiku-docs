@@ -12,7 +12,7 @@ export const UseLocalStorageDemo = () => {
 
     return (
         <div className="demo-container-center">
-            <b style={{ "marginBottom": '1em' }}>Storage Value: {value.message}</b>
+            <b style={{ "marginBottom": '1em' }}>Storage Value: {value?.message}</b>
             <button className="demo-button" onClick={() => setValue({ message: 'Woah!' })}>Update Storage</button>
         </div>
     );
