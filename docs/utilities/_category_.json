@@ -1,6 +1,7 @@
 {
     "label": "Utilities",
-    "position": 4,
+    "collapsible": false,
+    "position": 3,
     "link": {
       "type": "generated-index"
     }
