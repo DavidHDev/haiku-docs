@@ -54,6 +54,26 @@ pnpm install react-haiku
 ```
 <br />
 
+
+## Using Haiku with NextJS
+
+Because Haiku uses ES6 modules, it is not transpiled by NextJS automatically since it's an external dependency, so you may have to follow a few extra steps to set it up correctly:
+
+1. Add the `next-transpile-modules` package to your project:<br/>
+
+```sh
+npm install next-transpile-modules
+```
+
+2. Configure your project's `next.config.js` file to transpile Haiku:
+
+```js
+const withTM = require('next-transpile-modules')(['react-haiku']);
+module.exports = withTM({});
+```
+
+After following these two steps, importing features from `react-haiku` into your project should work as expected! <br/><br/><br/><hr />
+
 <div align="center">
 	<i>I hope you will have as much fun using Haiku as I had creating it!</i>
 </div>
