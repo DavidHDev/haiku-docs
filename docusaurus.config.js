@@ -78,7 +78,7 @@ const config = {
             position: 'right',
           },
           {
-            to: 'https://ko-fi.com/davidwebdev',
+            to: 'https://ko-fi.com/davidhaz',
             label: 'Sponsor',
             position: 'right',
           },

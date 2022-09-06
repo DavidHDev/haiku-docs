@@ -36,7 +36,7 @@ export default function Homepage() {
               <a rel='noreferrer' aria-label='github' target="_blank" href="https://github.com/DavidHDev/react-haiku">
                 <img className='nav-img gh' src={useBaseUrl('/img/github.svg')} alt="github octocat logo" />
               </a>
-              <a className='supporter-button' rel='noreferrer' target="_blank" aria-label="Be The First" href='https://ko-fi.com/davidwebdev'>
+              <a className='supporter-button' rel='noreferrer' target="_blank" aria-label="Be The First" href='https://ko-fi.com/davidhaz'>
                 <button className='sponsor'>
                   <img className='nav-img' src={useBaseUrl('/img/sponsor.svg')} alt="sponsor heart" />
                   Support
@@ -52,7 +52,7 @@ export default function Homepage() {
                 <a onClick={() => setMenuOpen(false)} rel='noreferrer' aria-label='github' target="_blank" href="https://github.com/DavidHDev/react-haiku">
                   GitHub
                 </a>
-                <a onClick={() => setMenuOpen(false)} rel='noreferrer' target="_blank" aria-label="Be The First" href='https://ko-fi.com/davidwebdev'>
+                <a onClick={() => setMenuOpen(false)} rel='noreferrer' target="_blank" aria-label="Be The First" href='https://ko-fi.com/davidhaz'>
                   <button>
                     Support
                     <img src={useBaseUrl('/img/sponsor.svg')} alt="sponsor heart" />
@@ -109,7 +109,7 @@ export default function Homepage() {
         <div className='haiku-sponsors'>
           <p className='supporters-title'>Support The Creator</p>
           <p className='support-description'>If you enjoy my work, you can fuel it with more coffee!</p>
-          <a rel='noreferrer' target="_blank" aria-label="Be The First" href='https://ko-fi.com/davidwebdev'>
+          <a rel='noreferrer' target="_blank" aria-label="Be The First" href='https://ko-fi.com/davidhaz'>
             <button className='support-button'>
               <img className='nav-img' src={useBaseUrl('/img/sponsor.svg')} alt="sponsor heart" />
               Show Your Support
