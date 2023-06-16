@@ -108,7 +108,7 @@ export default function Homepage() {
       <div className='sponsors-container'>
         <div className='haiku-sponsors'>
           <p className='supporters-title'>Support The Creator</p>
-          <p className='support-description'>If you enjoy my work, you can fuel it with more coffee!</p>
+          <p className='support-description'>If you enjoy my work, you can fuel it with coffee!</p>
           <a rel='noreferrer' target="_blank" aria-label="Be The First" href='https://ko-fi.com/davidhaz'>
             <button className='support-button'>
               <img className='nav-img' src={useBaseUrl('/img/sponsor.svg')} alt="sponsor heart" />
